@@ -22,14 +22,14 @@
             width: 100%;            
         }
 
-        .panel-heading {
+        .p-heading {
             padding: 0;            
             display: flex;
             flex-direction: column;            
             justify-content: space-between;
         }
 
-        .panel-title {
+        .p-title {
             padding: 0;
             margin: 20px 0 0 0;
             font-size: 4rem; 
@@ -53,7 +53,7 @@
             padding: 15px;
         }
 
-        #cat-qua {
+        .flexSB {
             display: flex;
             justify-content: space-between;
         }
@@ -75,16 +75,24 @@
             width: 100px;
             margin: 5px;
         }
+
+        .p-small {
+            padding: 0;
+        }
+
+        .p-small .panel-title {
+            padding: 50px 0;
+        }
     </style>
 </head>
 <body>
 
     <div class="container-fluid">
         <div class="row content">
-            <div class="col-lg-10">
+            <div class="col-lg-12">
                 <div id="gerencia" class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">Gerència / Comitè Direcció</h3>
+                    <div class="panel-heading p-heading">
+                        <h3 class="panel-title text-center p-title">Gerència / Comitè Direcció</h3>
                         <div class="headings-btns">
                             <div>
                                 <button type="button" class="btn btn-primary">Item</button>
@@ -100,11 +108,11 @@
                                 <button type="button" class="btn btn-primary">Item</button>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-primary collapse-btn" data-toggle="collapse" data-target="#collapseOne">
+                        <button type="button" class="btn btn-primary collapse-btn" data-toggle="collapse" data-target="#collapse1">
                             <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
                         </button> 
                     </div>
-                    <div id="collapseOne" class="panel-body collapse bg-primary">
+                    <div id="collapse1" class="panel-body collapse bg-primary">
                         <div class="headings-btns">
                             <div>
                                 <button type="button" class="btn btn-default">Item</button>
@@ -128,19 +136,19 @@
         </div>
 
 
-        <div id="cat-qua" class="row">
+        <div class="row flexSB">
             <div id="catsalut" class="col-lg-4">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">CatSalut</h3>
+                    <div class="panel-heading p-heading">
+                        <h3 class="panel-title text-center p-title">CatSalut</h3>
                         <div class="headings-btns">                                   
                             <button type="button" class="btn btn-primary">Item</button>                                       
                         </div>
-                        <button type="button" class="btn btn-primary collapse-btn" data-toggle="collapse" data-target="#collapseTwo">
+                        <button type="button" class="btn btn-primary collapse-btn" data-toggle="collapse" data-target="#collapse2">
                             <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
                         </button> 
                     </div>
-                    <div id="collapseTwo" class="panel-body collapse bg-primary">
+                    <div id="collapse2" class="panel-body collapse bg-primary">
                         <div class="row">
                             <div class="col-lg-6 text-center">
                                 <button type="button" class="btn btn-default">Item</button>
@@ -158,16 +166,16 @@
             </div>
             <div id="qualitat" class="col-lg-4">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">Qualitat</h3>
+                    <div class="panel-heading p-heading">
+                        <h3 class="panel-title text-center p-title">Qualitat</h3>
                         <div class="headings-btns">                                  
                             <button type="button" class="btn btn-primary">Item</button>                                         
                         </div>
-                        <button type="button" class="btn btn-primary collapse-btn" data-toggle="collapse" data-target="#collapseThree">
+                        <button type="button" class="btn btn-primary collapse-btn" data-toggle="collapse" data-target="#collapse3">
                             <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
                         </button> 
                     </div>
-                    <div id="collapseThree" class="panel-body collapse bg-primary">
+                    <div id="collapse3" class="panel-body collapse bg-primary">
                         <div class="row">
                             <div class="col-lg-6 text-center">
                                 <button type="button" class="btn btn-default">Item</button>
@@ -185,9 +193,169 @@
             </div>
         </div>
 
-                
+        <div class="row flexSB">
+            <div class="col-lg-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading p-small">
+                        <h3 class="panel-title text-center"><strong>Qualitat</strong></h3>
+                        <button type="button" class="btn btn-primary btn-sm collapse-btn" data-toggle="collapse" data-target="#collapse4">
+                            <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading p-small">
+                        <h3 class="panel-title text-center"><strong>Qualitat</strong></h3>
+                        <button type="button" class="btn btn-primary btn-sm collapse-btn" data-toggle="collapse" data-target="#collapse5">
+                            <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading p-small">
+                        <h3 class="panel-title text-center"><strong>Qualitat</strong></h3>
+                        <button type="button" class="btn btn-primary btn-sm collapse-btn" data-toggle="collapse" data-target="#collapse6">
+                            <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading p-small">
+                        <h3 class="panel-title text-center"><strong>Qualitat</strong></h3>
+                        <button type="button" class="btn btn-primary btn-sm collapse-btn" data-toggle="collapse" data-target="#collapse7">
+                            <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading p-small">
+                        <h3 class="panel-title text-center"><strong>Qualitat</strong></h3>
+                        <button type="button" class="btn btn-primary btn-sm collapse-btn" data-toggle="collapse" data-target="#collapse8">
+                            <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading p-small">
+                        <h3 class="panel-title text-center"><strong>Qualitat</strong></h3>
+                        <button type="button" class="btn btn-primary btn-sm collapse-btn" data-toggle="collapse" data-target="#collapse9">
+                            <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="collapse4" class="panel-body collapse bg-primary">
+                    <div class="row">
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div id="collapse5" class="panel-body collapse bg-primary">
+                    <div class="row">
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div id="collapse6" class="panel-body collapse bg-primary">
+                    <div class="row">
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div id="collapse7" class="panel-body collapse bg-primary">
+                    <div class="row">
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div id="collapse8" class="panel-body collapse bg-primary">
+                    <div class="row">
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div id="collapse9" class="panel-body collapse bg-primary">
+                    <div class="row">
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
 
     </div>
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
