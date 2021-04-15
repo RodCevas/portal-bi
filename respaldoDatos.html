@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal BI</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <style>
+      #gerencia {
+        margin-top: 50px;
+      }
+
+      .p-heading {
+        padding: 0;
+      }
+
+      .p-title {
+        font-size: 4rem;
+      }
+
+      .collapse-btn {
+        width: 100%;
+        margin: 0;
+      }
+
+      .headings-btns {
+        margin: 30px 0;
+      }
+
+      .btn-item {
+        margin: 10px;
+        width: 50%;
+        padding: 15px;
+      }
+
+      .btn-item {
+        margin: 10px;
+        width: 50%;
+        padding: 15px;
+      }
+
+      .p-small {
+        padding: 0;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .p-small .panel-title {
+        padding: 60px 5px;
+      }
+
+      .panel-group .panel-heading[aria-expanded="true"] {
+        background-color: lightgray;
+      }
+
+      @media screen and (min-width: 1200px) {
+        .panel-group {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+        .panel-group .panel-collapse {
+          border: 1px solid lightgray;
+          position: absolute;
+          width: 100%;
+          left: 0;
+        }
+        .panel-group .panel-title {
+          height: 80px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="gerencia" class="panel panel-default">
+            <div class="panel-heading p-heading">
+              <h3 class="panel-title text-center p-title">
+                Gerència / Comitè Direcció
+              </h3>
+              <div class="row text-center headings-btns">
+                <div class="col-lg-4">
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                </div>
+                <div class="col-lg-4">
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                </div>
+                <div class="col-lg-4">
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary collapse-btn"
+                data-toggle="collapse"
+                data-target="#collapse1"
+              >
+                <span
+                  class="glyphicon glyphicon-option-horizontal"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </div>
+            <div id="collapse1" class="panel-body collapse bg-primary">
+              <div class="row text-center headings-btns">
+                <div class="col-lg-4">
+                  <button type="button" class="btn btn-default btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-default btn-item">
+                    Item
+                  </button>
+                </div>
+                <div class="col-lg-4">
+                  <button type="button" class="btn btn-default btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-default btn-item">
+                    Item
+                  </button>
+                </div>
+                <div class="col-lg-4">
+                  <button type="button" class="btn btn-default btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-default btn-item">
+                    Item
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="panel panel-default">
+            <div class="panel-heading p-heading">
+              <h3 class="panel-title text-center p-title">CatSalut</h3>
+              <div class="text-center headings-btns">
+                <button type="button" class="btn btn-primary btn-item">
+                  Item
+                </button>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary collapse-btn"
+                data-toggle="collapse"
+                data-target="#collapse2"
+              >
+                <span
+                  class="glyphicon glyphicon-option-horizontal"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </div>
+            <div id="collapse2" class="panel-body collapse bg-primary">
+              <div class="row">
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-default btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-default btn-item">
+                    Item
+                  </button>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-default btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-default btn-item">
+                    Item
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+          <div class="panel panel-default">
+            <div class="panel-heading p-heading">
+              <h3 class="panel-title text-center p-title">Qualitat</h3>
+              <div class="text-center headings-btns">
+                <button type="button" class="btn btn-primary btn-item">
+                  Item
+                </button>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary collapse-btn"
+                data-toggle="collapse"
+                data-target="#collapse3"
+              >
+                <span
+                  class="glyphicon glyphicon-option-horizontal"
+                  aria-hidden="true"
+                ></span>
+              </button>
+            </div>
+            <div id="collapse3" class="panel-body collapse bg-primary">
+              <div class="row">
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-default btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-default btn-item">
+                    Item
+                  </button>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-default btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-default btn-item">
+                    Item
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="panel-group"
+        id="accordion"
+        role="tablist"
+        aria-multiselectable="true"
+      >
+        <div class="panel panel-default">
+          <div
+            role="button"
+            data-toggle="collapse"
+            data-parent="#accordion"
+            href="#collapse4"
+            aria-expanded="false"
+            aria-controls="collapse4"
+            class="panel-heading"
+            id="heading4"
+          >
+            <div class="panel-title text-center">
+              <a class="lead">Dir. Assistencial</a>
+            </div>
+          </div>
+          <div
+            id="collapse4"
+            class="panel-collapse collapse"
+            role="tabpanel"
+            aria-labelledby="heading4"
+          >
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h4>Dir. Assistencial</h4>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div
+            role="button"
+            data-toggle="collapse"
+            data-parent="#accordion"
+            href="#collapse5"
+            aria-expanded="false"
+            aria-controls="collapse5"
+            class="panel-heading"
+            id="heading5"
+          >
+            <h4 class="panel-title text-center">
+              <a class="lead"> Direcció de Gestió </a>
+            </h4>
+          </div>
+          <div
+            id="collapse5"
+            class="panel-collapse collapse"
+            role="tabpanel"
+            aria-labelledby="heading5"
+          >
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h4>Direcció de Gestió</h4>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div
+            role="button"
+            data-toggle="collapse"
+            data-parent="#accordion"
+            href="#collapse6"
+            aria-expanded="false"
+            aria-controls="collapse6"
+            class="panel-heading"
+            id="heading6"
+          >
+            <h4 class="panel-title text-center">
+              <a class="lead"> Direcció de Recursos Humans </a>
+            </h4>
+          </div>
+          <div
+            id="collapse6"
+            class="panel-collapse collapse"
+            role="tabpanel"
+            aria-labelledby="heading6"
+          >
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h4>Direcció de Recursos Humans</h4>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div
+            role="button"
+            data-toggle="collapse"
+            data-parent="#accordion"
+            href="#collapse7"
+            aria-expanded="false"
+            aria-controls="collapse7"
+            class="panel-heading"
+            id="heading7"
+          >
+            <h4 class="panel-title text-center">
+              <a class="lead">
+                Direcció d’Innovació i Tecnologies de la Informació
+              </a>
+            </h4>
+          </div>
+          <div
+            id="collapse7"
+            class="panel-collapse collapse"
+            role="tabpanel"
+            aria-labelledby="heading7"
+          >
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h4>Direcció d’Innovació i Tecnologies de la Informació</h4>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div
+            role="button"
+            data-toggle="collapse"
+            data-parent="#accordion"
+            href="#collapse8"
+            aria-expanded="false"
+            aria-controls="collapse8"
+            class="panel-heading"
+            id="heading8"
+          >
+            <h4 class="panel-title text-center">
+              <a class="lead"> Direcció Economicofinancera </a>
+            </h4>
+          </div>
+          <div
+            id="collapse8"
+            class="panel-collapse collapse"
+            role="tabpanel"
+            aria-labelledby="heading8"
+          >
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h4>Direcció Economicofinancera</h4>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div
+            role="button"
+            data-toggle="collapse"
+            data-parent="#accordion"
+            href="#collapse9"
+            aria-expanded="false"
+            aria-controls="collapse9"
+            class="panel-heading"
+            id="heading9"
+          >
+            <h4 class="panel-title text-center">
+              <a class="lead"> Direcció de Comunicació i Atenció al Usuari </a>
+            </h4>
+          </div>
+          <div
+            id="collapse9"
+            class="panel-collapse collapse"
+            role="tabpanel"
+            aria-labelledby="heading9"
+          >
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h4>Direcció de Comunicació i Atenció al Usuari</h4>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                </div>
+                <div class="col-lg-6 text-center">
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                  <br />
+                  <button type="button" class="btn btn-primary btn-item">
+                    Item
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--         <div class="row" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="col-lg-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading p-small">
+                        <h3 class="panel-title text-center"><strong>Dir. Assistencial</strong></h3>
+                        <button role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse4" class="btn btn-primary btn-sm collapse-btn" role="tab" id="heading4">
+                            <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading p-small">
+                        <h3 class="panel-title text-center"><strong>Direcció de Gestió</strong></h3>
+                        <button role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5" class="btn btn-primary btn-sm collapse-btn" role="tab" id="heading5">
+                            <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading p-small">
+                        <h3 class="panel-title text-center"><strong>Direcció de Recursos Humans</strong></h3>
+                        <button type="button" class="btn btn-primary btn-sm collapse-btn" data-toggle="collapse" data-target="#collapse6">
+                            <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading p-small">
+                        <h3 class="panel-title text-center"><strong>Direcció d’Innovació i Tecnologies de la Informació</strong></h3>
+                        <button type="button" class="btn btn-primary btn-sm collapse-btn" data-toggle="collapse" data-target="#collapse7">
+                            <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading p-small">
+                        <h3 class="panel-title text-center"><strong>Direcció Economicofinancera</strong></h3>
+                        <button type="button" class="btn btn-primary btn-sm collapse-btn" data-toggle="collapse" data-target="#collapse8">
+                            <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading p-small">
+                        <h3 class="panel-title text-center"><strong>Direcció de Comunicació i Atenció al Usuari</strong></h3>
+                        <button type="button" class="btn btn-primary btn-sm collapse-btn" data-toggle="collapse" data-target="#collapse9">
+                            <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
+                        </button> 
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+
+      <!--         <div class="row">
+            <div class="col-lg-12">
+                <div class="panel-body collapse bg-primary" id="collapse4" role="tabpanel" aria-labelledby="heading4">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h4>Dir. Assistencial</h4>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div id="collapse5" class="panel-collapse collapse bg-primary" role="tabpanel" aria-labelledby="heading5">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h4>Direcció de Gestió</h4>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div id="collapse6" class="panel-body collapse bg-primary">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h4>Direcció de Recursos Humans</h4>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div id="collapse7" class="panel-body collapse bg-primary">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h4>Direcció d’Innovació i Tecnologies de la Informació</h4>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div id="collapse8" class="panel-body collapse bg-primary">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h4>Direcció Economicofinancera</h4>                            
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div id="collapse9" class="panel-body collapse bg-primary">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h4>Direcció de Comunicació i Atenció al Usuari</h4>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <button type="button" class="btn btn-default">Item</button>
+                            <br>
+                            <button type="button" class="btn btn-default">Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
